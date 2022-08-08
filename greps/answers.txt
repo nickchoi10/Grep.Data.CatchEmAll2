@@ -1,15 +1,50 @@
 # Part 1
 ### a)
+nicholas@choi Grep.Data.CatchEmAll2 % grep "beed" forest/filescan_00.1 > captured/beedrill.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep "blas" forest/filescan_00.1 > captured/blastoise.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep "bulb" forest/filescan_00.1 > captured/bulbasaur.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep "butt" forest/filescan_00.1 > captured/butterfree.txt;
 
+nicholas@choi Grep.Data.CatchEmAll2 % grep "izard" forest/filescan_00.2 > captured/charizard.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep "mander$" forest/filescan_00.2 > captured/charmander.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep "meleon$" forest/filescan_00.2 > captured/charmeleon.txt;
 
-
-
+nicholas@choi Grep.Data.CatchEmAll2 % grep psyd forest/filescan_00.4 > captured/psyduck.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep squi forest/filescan_00.4 > captured/squirtle.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep venu forest/filescan_00.4 > captured/venusaur.txt;
+nicholas@choi Grep.Data.CatchEmAll2 % grep wart forest/filescan_00.4 > captured/wartortle.txt;
 ### b)
-
+beedrill.txt
+blastoise.txt
+bulbasaur.txt
+butterfree.txt
+charizard.txt
+charmeleon.txt
+charmander.txt
+ivysaur.txt
+jigglypuff.txt
+meowth.txt
+pikachu.txt
+psyduck.txt
+squirtle.txt
+venusaur.txt
+wartortle.txt
 
 
 ### c)
+% grep "beed" forest/filescan_00.1 > captured/beedrill.txt;
+% grep "blas" forest/filescan_00.1 > captured/blastoise.txt;
+% grep "bulb" forest/filescan_00.1 > captured/bulbasaur.txt;
+% grep "butt" forest/filescan_00.1 > captured/butterfree.txt;
 
+% grep "izard" forest/filescan_00.2 > captured/charizard.txt;
+% grep "mander$" forest/filescan_00.2 > captured/charmander.txt;
+% grep "meleon$" forest/filescan_00.2 > captured/charmeleon.txt;
+
+% grep psyd forest/filescan_00.4 > captured/psyduck.txt;
+% grep squi forest/filescan_00.4 > captured/squirtle.txt;
+% grep venu forest/filescan_00.4 > captured/venusaur.txt;
+% grep wart forest/filescan_00.4 > captured/wartortle.txt;
 
 
 
@@ -24,15 +59,40 @@
 
 # Part 2
 ### a)
+ls -1 | wc -l
+
+^ have to be in captured folder....
+
+nicholas@choi captured % ls -1 | wc -l
+      16
+
+Have to substract 16-1=15 because there is one file that is instruction.txt
 
 
 
 
 
 
-### b)
+### b)    // Biggest pokemons are pikachu, charizard, beedrill
 
-
+nicholas@choi captured % wc -l * | sort
+       1 instruction.txt
+      30 bulbasaur.txt
+      32 venusaur.txt
+      33 ivysaur.txt
+      33 meowth.txt
+      34 jigglypuff.txt
+      34 squirtle.txt
+      36 charmander.txt
+      37 charmeleon.txt
+      37 psyduck.txt
+      37 wartortle.txt
+      38 blastoise.txt
+      38 butterfree.txt
+      40 beedrill.txt
+      40 charizard.txt
+      40 pikachu.txt
+     540 total
 
 
 
